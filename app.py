@@ -1,3 +1,20 @@
+from flask import Flask
+import threading
+
+app = Flask(__name__)
+
+@app.route("/")
+def health_check():
+    return "Bot is running!", 200
+
+def run_web_server():
+    app.run(host="0.0.0.0", port=5000)
+
+# Inicie o servidor em uma thread separada
+if __name__ == "__main__":
+    threading.Thread(target=run_web_server).start()
+
+    # Aqui você inicia o bot
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import json
