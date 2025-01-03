@@ -1,0 +1,15 @@
+{
+    "grupos": {
+        "-1002313463203": {
+            "nome": "\ud835\udc0a\ud835\udc1a\ud835\udc26\ud835\udc22\ud835\udc24\ud835\udc1a\ud835\udc33\ud835\udc1e (Chat)",
+            "ativo": false,
+            "membros": null
+        }
+    },
+    "mensagens": {},
+    "intervalo": 10,
+    "mensagem_atual": {
+        "chat_id": 6397013648,
+        "message_id": 21
+    }
+}
